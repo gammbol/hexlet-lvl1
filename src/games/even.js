@@ -1,11 +1,11 @@
 import readlineSync from 'readline-sync';
 
-export const getRandomInt = () => {
+const getRandomInt = () => {
   const ranNum = Math.floor(Math.random() * 100);
   return ranNum;
 };
 
-export const checkIntAns = (num, ans) => {
+const checkIntAns = (num, ans) => {
   const ansBull = ans === 'yes';
   if ((num % 2 === 0) === ansBull) {
     return true;
@@ -13,7 +13,7 @@ export const checkIntAns = (num, ans) => {
   return false;
 };
 
-export const playGame = (name) => {
+export default (name) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   for (let i = 0; i < 3; i += 1) {
