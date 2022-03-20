@@ -26,7 +26,7 @@ export const isEven = (num, answer) => {
 
 export const lose = (name, userAns, rightAns) => {
     console.log(`'${userAns}' is wrong answer ;(. Correct answer was '${rightAns}'`);
-    console.log(`Let's try again, ${name}`);
+    console.log(`Let's try again, ${name}!`);
 };
 
 export const win = (name) => console.log(`Congratulations, ${name}!`);
@@ -48,4 +48,17 @@ export const gcb = (first, second) => {
         if ((first % nod === 0) && (second % nod === 0)) return nod;
     }
     return 1;
+};
+
+export const progression = (step, skipId, progressLen) => {
+    const progress = [];
+
+    for (let i = 0; i < progressLen; i += 1) {
+        if (progress.length === 0) progress.push(getRandomInt(0, 100));
+        else if (i === skipId) progress.push('..');
+        else if (progress[i - 1] === '..') progress.push(progress[i - 2] + step * 2);
+        else progress.push(progress[i - 1] + step);
+    }
+
+    return progress;
 };
