@@ -2,6 +2,9 @@
 
 ![example workflow](https://github.com/gammbol/hexlet-lvl1/actions/workflows/linting.yaml/badge.svg)
 
+Install:
+    make install
+
 [![asciicast](https://asciinema.org/a/QDWDimSYkjEJxHnM6b0NJ6gHv.svg)](https://asciinema.org/a/QDWDimSYkjEJxHnM6b0NJ6gHv)
 
 [![asciicast](https://asciinema.org/a/mGjt3nyXvkNbqU87OhefIESWJ.svg)](https://asciinema.org/a/mGjt3nyXvkNbqU87OhefIESWJ)
