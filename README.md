@@ -4,6 +4,7 @@
 
 Install:
     make install
+    make link
 
 [![asciicast](https://asciinema.org/a/QDWDimSYkjEJxHnM6b0NJ6gHv.svg)](https://asciinema.org/a/QDWDimSYkjEJxHnM6b0NJ6gHv)
 
