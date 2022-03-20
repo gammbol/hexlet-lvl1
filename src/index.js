@@ -41,3 +41,11 @@ export const exampleMaker = (first, second, sign) => {
     if (sign === '*') return first * second;
     return false;
 };
+
+export const gcb = (first, second) => {
+    const minimum = Math.min(first, second);
+    for (let nod = minimum; nod > 1; nod -= 1) {
+        if ((first % nod === 0) && (second % nod === 0)) return nod;
+    }
+    return 1;
+};
